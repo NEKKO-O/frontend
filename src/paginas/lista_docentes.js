@@ -31,7 +31,7 @@ class Listad extends Component {
 
         <div>
           {this.state.res.map((e) => {
-            return <Cardp data={e} />;
+            return <Cardp data={e} key={e.id_docente} />;
           })}
         </div>
       </div>
