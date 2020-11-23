@@ -8,7 +8,9 @@ class Elementop extends Component {
   };
 
   componentDidMount() {
-    fetch(`https://backend.nekkoo.repl.co/api/buscarprofesor/${this.props.id}`)
+    fetch(
+      `https://backend-sand-kappa.vercel.app/api/buscarprofesor/${this.props.id}`
+    )
       .then((res) => res.json())
       .then((res) => {
         this.setState({

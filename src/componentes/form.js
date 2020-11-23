@@ -15,7 +15,9 @@ class form extends Component {
 
   onLogin = async (e) => {
     if (this.props.link === "p") {
-      fetch(`https://backend.nekkoo.repl.co/api/ingresarp/${this.state.codigo}`)
+      fetch(
+        `https://backend-sand-kappa.vercel.app/api/ingresarp/${this.state.codigo}`
+      )
         .then((res) => res.json())
         .then((res) => {
           if (res.length > 0) {
@@ -28,7 +30,9 @@ class form extends Component {
           }
         });
     } else {
-      fetch(`https://backend.nekkoo.repl.co/api/ingresare/${this.state.codigo}`)
+      fetch(
+        `https://backend-sand-kappa.vercel.app/api/ingresare/${this.state.codigo}`
+      )
         .then((res) => res.json())
         .then((res) => {
           if (res.length > 0) {

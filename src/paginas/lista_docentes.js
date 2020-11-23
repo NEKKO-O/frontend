@@ -10,7 +10,7 @@ class Listad extends Component {
   };
 
   componentDidMount() {
-    fetch(`https://backend.nekkoo.repl.co/api/profesores`)
+    fetch(`https://backend-sand-kappa.vercel.app/api/profesores`)
       .then((res) => res.json())
       .then((res) => {
         this.setState({

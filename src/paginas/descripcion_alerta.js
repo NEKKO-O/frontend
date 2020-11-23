@@ -10,11 +10,11 @@ class Descripciona extends Component {
 
   onCreate = () => {
     fetch(
-      `https://backend.nekkoo.repl.co/api/alertas/${this.props.match.params.id}`
+      `https://backend-sand-kappa.vercel.app/api/alertas/${this.props.match.params.id}`
     )
       .then((res) => res.json())
       .then((result) => {
-        fetch("https://backend.nekkoo.repl.co/agregar/agregaralerta", {
+        fetch("https://backend-sand-kappa.vercel.app/agregar/agregaralerta", {
           method: "POST",
           body: JSON.stringify({
             id_alerta: result.length + 1,
