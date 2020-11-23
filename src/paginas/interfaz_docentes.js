@@ -10,7 +10,7 @@ class Interfaz_p extends Component {
 
   componentDidMount() {
     fetch(
-      `https://backend-sand-kappa.vercel.app/api/buscarprofesor/${this.props.match.params.id}`
+      `https://apiinemtecuida.vercel.app/api/buscarprofesor/${this.props.match.params.id}`
     )
       .then((res) => res.json())
       .then((res) => {

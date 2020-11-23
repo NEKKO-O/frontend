@@ -15,7 +15,7 @@ class form extends Component {
   onLogin = async (e) => {
     if (this.props.link === "p") {
       fetch(
-        `https://backend-sand-kappa.vercel.app/api/ingresarp/${this.state.codigo}`
+        `https://apiinemtecuida.vercel.app/api/ingresarp/${this.state.codigo}`
       )
         .then((res) => res.json())
         .then((res) => {
@@ -30,7 +30,7 @@ class form extends Component {
         });
     } else {
       fetch(
-        `https://backend-sand-kappa.vercel.app/api/ingresare/${this.state.codigo}`
+        `https://apiinemtecuida.vercel.app/api/ingresare/${this.state.codigo}`
       )
         .then((res) => res.json())
         .then((res) => {

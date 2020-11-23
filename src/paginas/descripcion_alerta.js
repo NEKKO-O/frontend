@@ -10,11 +10,11 @@ class Descripciona extends Component {
 
   onCreate = () => {
     fetch(
-      `https://backend-sand-kappa.vercel.app/api/alertas/${this.props.match.params.id}`
+      `https://apiinemtecuida.vercel.app/api/alertas/${this.props.match.params.id}`
     )
       .then((res) => res.json())
       .then((result) => {
-        fetch("https://backend-sand-kappa.vercel.app/agregar/agregaralerta", {
+        fetch("https://apiinemtecuida.vercel.app/agregar/agregaralerta", {
           method: "POST",
           body: JSON.stringify({
             id_alerta: result.length + 1,

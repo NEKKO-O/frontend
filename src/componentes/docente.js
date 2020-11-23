@@ -9,7 +9,7 @@ class Docente extends Component {
 
   componentDidMount() {
     fetch(
-      `https://backend-sand-kappa.vercel.app/api/buscarprofesor/${this.props.id}`
+      `https://apiinemtecuida.vercel.app/api/buscarprofesor/${this.props.id}`
     )
       .then((res) => res.json())
       .then((res) => {

@@ -11,7 +11,7 @@ class alertasp extends Component {
 
   componentDidMount() {
     fetch(
-      `https://backend-sand-kappa.vercel.app/api/alertas/${this.props.match.params.id}`
+      `https://apiinemtecuida.vercel.app/api/alertas/${this.props.match.params.id}`
     )
       .then((res) => res.json())
       .then((res) => {
