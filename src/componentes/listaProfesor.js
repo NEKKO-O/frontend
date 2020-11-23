@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class Cardp extends Component {
   render() {
     return (
-      <div>
+      <div key={this.props.data.id_docente}>
         <div className="card ">
           <div className="card-body datosDocente p-3 ml-5">
             <h4 className="card-title">{this.props.data.nombre}</h4>

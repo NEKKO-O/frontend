@@ -30,9 +30,22 @@ class Listad extends Component {
         </div>
 
         <div>
-          {this.state.res.map((e) => {
-            return <Cardp data={e} key={e.id_docente} />;
-          })}
+          {this.state.res.map((e, index) => (
+            <div key={index}>
+              <div className="card ">
+                <div className="card-body datosDocente p-3 ml-5">
+                  <h4 className="card-title">{e.nombre}</h4>
+                  <h5 className="card-text">{e.asignatura}</h5>
+                  <a
+                    href={`/cartap/${e.id_profesor}`}
+                    className="btn btn-outline-light"
+                  >
+                    Ver más
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     );
