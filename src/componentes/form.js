@@ -9,8 +9,7 @@ class form extends Component {
     usuarios_p: usuarios_p,
     usuarios_e: usuarios_e,
     codigo: "",
-    contraseña: "",
-    codigo: ""
+    contraseña: ""
   };
 
   onLogin = async (e) => {

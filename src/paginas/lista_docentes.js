@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "../componentes/header";
-import Cardp from "../componentes/listaProfesor";
 import "../css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
